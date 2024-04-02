@@ -1,0 +1,77 @@
+#text-container {
+    text-align: center;
+    margin-top: 20px; /* Ajustez la marge pour déplacer le texte vers le haut */
+    line-height: 30px; /* Ajustez la hauteur de ligne selon vos besoins */
+    min-height: 30px; /* Ajustez la hauteur minimale selon vos besoins */
+}
+ 
+ #portfolio-text {
+    font-size:  50px;
+    font-family: 'W95FA';
+    font-weight: bold;
+    color: #333;
+    overflow: hidden;
+    border-right: 2px solid #000;
+    animation: typing 2s steps(12), blink-caret 0.5s step-end infinite;
+    display: inline-block; /* Pour permettre le centrage horizontal */
+    text-align: left; /* Pour aligner le texte à gauche au fur et à mesure de l'écriture */
+}
+
+.texte-carte {
+  font-size: 15px; /* Vous pouvez ajuster la taille de la police selon vos besoins */
+  /* Ajoutez d'autres styles si nécessaire */
+}
+
+
+
+
+
+
+ 
+.card-tertiary {
+    margin-top: 40px; /* Ajustez l'espace entre le haut de la carte et le contenu précédent */
+    
+  }
+ 
+
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #000;
+    }
+  }
+
+
+
+  .my-form label,
+  .my-form input,
+  .my-form textarea,
+  .my-form .form-check-label {
+      font-size: 12px; /* Ajustez la taille de la police selon vos besoins */
+  }
+  
+
+.my-form input:focus,
+.my-form textarea:focus {
+    font-size: 12px; /* Augmentez la taille de police lorsqu'un champ est en focus */
+}
+
+
+
+
+
+
+

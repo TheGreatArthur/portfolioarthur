@@ -1,10 +1,17 @@
 @font-face {
-    font-family: 'Windows 95';
-    src: url('../fonts/w-95-sans-serif.woff2') format('woff2'),
-        url('../fonts/w-95-sans-serif.woff') format('woff');
+    font-family: 'W95FA';
+    src: url('../fonts/w95fa.woff2') format('woff2'),
+        url('../fonts/w95fa.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
+
+
+
+
+
+
 
 /**
  * = Backgrounds
@@ -6766,14 +6773,14 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: "Windows 95", sans-serif;
-    font-weight: 400;
+    font-family: "W95FA", sans-serif;
+    font-weight: 600;
 }
 
 p,
 ol li,
 ul li {
-    font-family: "Windows 95", sans-serif;
+    font-family: "W95FA", sans-serif;
     font-size: .6rem;
     font-weight: 300;
     line-height: 2;
