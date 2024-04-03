@@ -27,6 +27,21 @@
     <link type="text/css" rel="stylesheet" href="pixel.css">
     <link type="text/css" rel="stylesheet" href="main.css">
 
+
+    <!-- Email -->
+
+    <script src="index.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("Rg5oOTcI4q9Lc3t-l");
+      })();
+    </script>
+
 </head>
 
 
@@ -179,133 +194,49 @@
 
 
 
-</section>
-
-
 <section class="section section-lg bg-secondary overflow-hidden z-2">
-    <h2> Me contacter </h2>
-    <div class="row justify-content-center align-items-center">
-        <div class="col-12 col-lg-8 mb-4 mb-lg-0">
-            <div class="card card-tertiary">
-                <div class="card-header">
-                    <span class="icon icon-xs w95-folder"></span>
-                    <span class="ml-4">Formulaire de contact</span>
-                </div>
-                <div class="card-body">
-                    <form id="contactForm" class="my-form">
-
-                <form id="contactForm">
-                <div class="mb-4 mb-md-5">
-                </div>
-                <div class="form-group d-flex align-items-center justify-content-between">
-                    <label for="default" class="mr-3">Votre Email:</label>
-                    <input id="default" type="text" class="form-control w-75" />
-                </div>
-                 <div class="form-group d-flex align-items-center justify-content-between">
-                    <label for="default" class="mr-3">Votre nom:</label>
-                    <input id="default" type="text" class="form-control w-75" />
-                </div>
-                <div class="form-group d-flex align-items-center justify-content-between">
-                    <label for="default" class="mr-3">Sujet:</label>
-                    <input id="default" type="text" class="form-control w-75" />
-                </div>
-                <div class="form-group d-flex justify-content-between mb-2">
-                    <label for="textarea" class="mr-3">Zone de texte libre:</label>
-                    <textarea id="textarea" class="form-control w-75" cols="30" rows="10"></textarea>
-                </div>
-
-                <div class="form-group d-flex align-items-center justify-content-between">
-                    <label for="stage" class="mr-3">Voulez-vous me proposer une offre d'alternance ?</label>
-                    <div class="form-check form-check-radio">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="offerTypeStage" id="stage" value="yes">
-                            <span class="form-check-sign"></span>
-                            Oui
-                        </label>
-                    </div>
-                    <div class="form-check form-check-radio">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="offerTypeStage" id="noStage" value="no" checked>
-                            <span class="form-check-sign"></span>
-                            Non
-                        </label>
-                    </div>
-                </div>
-                
-                <div class="form-group d-flex align-items-center justify-content-between">
-                    <label for="job" class="mr-3">Voulez-vous me proposer une offre d'emploi ?</label>
-                    <div class="form-check form-check-radio">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="offerTypeJob" id="job" value="yes">
-                            <span class="form-check-sign"></span>
-                            Oui
-                        </label>
-                    </div>
-                    <div class="form-check form-check-radio">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="offerTypeJob" id="noJob" value="no" checked>
-                            <span class="form-check-sign"></span>
-                            Non
-                        </label>
-                    </div>
-                </div>
-                
-
-
-                <div class="form-group d-flex justify-content-end mb-4">
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox">
-                            <span class="form-check-x"></span>
-                            <span class="form-check-sign"></span>
-                            Je prends note que mes informations personelles puissent
-                            être gardé dans dans un carnet d'adresse afin d'être 
-                            peut-etre demarché dans le futur 
-                        </label>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-end">
-                    <div class="d-flex">
-                        <button class="btn btn-sm mr-3 btn-primary border-dark" type="button" onclick="envoyerFormulaire()">
-                            <span class="btn-text">Envoyer</span>
-                        </button>
-                        <button class="btn btn-sm btn-primary" type="button" onclick="annulerFormulaire()">
-                            <span class="btn-text">Annuler</span>
-                        </button>
-
-                        
-                        
-                        <script>
-                            function envoyerFormulaire() {
-                                // Logique d'envoi du formulaire (à compléter selon vos besoins)
-                                alert("Formulaire envoyé!");
-                            }
-                        
-                            function annulerFormulaire() {
-                                // Réinitialisation du formulaire
-                                document.getElementById("contactForm").reset();
-                            }
-                        </script>
-                        
-                        
-                    </div>
-                    </div>
-
-
-                    <!-- Fin du form -->
-                    </form>
-
-
-
-
-
-                </div>
+    
+    <div class="container border mt-3 bg-light">
+        <div class="row">
+          <div class="col-md-6 p-5 bg-primary text-black">
+            <h1>Me contacter</h1>
+            <h4>
+                Adressez-vous à ce formulaire de contact ou directement via mon adresse email sur mon cv.
+              
+                    
+            </h4>
+          </div>
+          <div class="col-md-6 border-left py-3">
+            <h1>Contact form</h1>
+            <div class="form-group">
+              <h5 for="name">Nom</h5>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter name"
+              />
             </div>
+            <div class="form-group">
+              <h5 for="email">Email</h5>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="form-group">
+              <h5 for="message">Message</h5>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+            <img src="https://wikimon.net/images/d/d2/Digitamamon_vpet_dmc.gif" alt="Mugendramon Sprite">
+                    
+          </div>
         </div>
-    </div>
-
+      </div>
 </section>
-
 
 
 
